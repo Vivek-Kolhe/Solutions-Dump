@@ -1,7 +1,7 @@
 def func_any(hash)
     # Check and return true if any key object within the hash is of the type Integer
     # If not found, return false.
-    return hash.any?{|key, hash| key.is_a? Integer}
+    return hash.any?{|key, hash| key.is_a?(Integer)}
 end
 
 def func_all(hash)
