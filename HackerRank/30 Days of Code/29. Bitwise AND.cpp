@@ -1,3 +1,5 @@
+/* Same solution with python exceeded time limits, so I used cpp instead. */
+
 #include <bits/stdc++.h>
 
 using namespace std;
