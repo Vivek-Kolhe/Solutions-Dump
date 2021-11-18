@@ -16,6 +16,7 @@ class Solution:
                 cur=self.insert(root.right,data)
                 root.right=cur
         return root
+    
     def maxDepth(self, root):
         if root is None:
             return 0
