@@ -4,7 +4,7 @@ for _ in range(int(input())):
   second = input()
   flag = True
   for i in range(n):
-    if (first[i] == second[i] == "R") or ((first[i] == "B" or first[i] == "G") and second[i] == "B" or second[i] == "G"):
+    if (first[i] == second[i] == "R") or ((first[i] == "B" or first[i] == "G") and (second[i] == "B" or second[i] == "G")):
       continue
     else:
       flag = False
