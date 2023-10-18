@@ -6,7 +6,7 @@ for _ in range(int(input())):
     mid = (low + high) // 2
     emo = 0
     if mid < k:
-      emo = count(mid)
+      emo = (mid * (mid + 1)) // 2
     else:
       emo = ((k * (k + 1)) // 2) + (((mid - k) * (k - 1 + k - (mid % k))) // 2)
     if emo >= x:
