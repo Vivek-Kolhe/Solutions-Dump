@@ -9,7 +9,6 @@ for i in range(m - n + 1):
   for j in range(n):
     if s[j] != ss[j]:
       cost += 1
-      
       temp.append(j + 1)
   h[cost] = temp
 key = min(h.keys())
