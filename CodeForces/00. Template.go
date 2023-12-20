@@ -8,6 +8,29 @@ import (
 	"math"
 )
 
+type Number interface {
+	int | int8 | int16 | int32 | int64 | float32 | float64
+}
+
+func Min[T Number](nums ...T) T {
+	res := nums[0]
+	for _, v := range nums {
+		if res > v {
+			res = v
+		}
+	}
+	return res
+}
+
+func Max[T Number](nums ...T) T {
+	res := nums[0]
+	for _, v := range nums {
+		if res < v {
+			res = v
+		}
+	}
+	return res
+}
 
 func Sieve(n int) []int {
 	isPrime := make([]bool, n+1)
