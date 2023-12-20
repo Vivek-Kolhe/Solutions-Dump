@@ -8,6 +8,7 @@ import (
 	"math"
 )
 
+
 func Sieve(n int) []int {
 	isPrime := make([]bool, n+1)
 	for i := 2; i <= n; i++ {
